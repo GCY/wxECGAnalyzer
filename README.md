@@ -5,6 +5,10 @@ This tool is for Electrocardiogram(ECG) signal use to machine learning auto labe
 
 ## Function
 - [x] QRS-Complex Algorithm
+  - [x] Adaptive Threshold Algorithm
+  - [x] HC_Chen Algorithm
+  - [x] Enhanced So & Chen
+  - [x] Pan-Tompkins
 - [x] Heart Rate Variability
 - [x] Labeling
 - [ ] MIT-BIH WFDB
