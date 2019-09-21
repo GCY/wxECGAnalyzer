@@ -7,7 +7,7 @@ This tool is for Electrocardiogram(ECG) signal use to machine learning auto labe
 - [x] QRS-Complex Algorithm
 - [x] Heart Rate Variability
 - [x] Labeling
-- [] MIT-BIH WFDB
+- [ ] MIT-BIH WFDB
 
 ## Demo
 </br>
