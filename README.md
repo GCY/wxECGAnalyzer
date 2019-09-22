@@ -37,3 +37,10 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 </br>
 
 ## Reference
+- HC_Chen Algorithm
+  - HC Chen, SW Chen, "A Moving Average based Filtering System with its Application to Real-time QRS Detection", Computers in Cardiology, 2003.
+  - https://github.com/blakeMilner/real_time_QRS_detection
+- Enhanced So & Chen
+- Pan-Tompkins
+  - Pan, J., & Tompkins, W. J. (1985). A real-time QRS detection algorithm. IEEE transactions on biomedical engineering, (3), 230-236.
+  - https://github.com/rafaelmmoreira/PanTompkinsQRS
