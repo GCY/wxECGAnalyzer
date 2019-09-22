@@ -35,6 +35,7 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
   - [x] Record RAW data(60s)
   - [x] Save four plot(.png)  
 - [x] Fast Furious Transform(FFT) amplitude spectrum
+- [x] Connect serial port
 
 ## Youtube
 </br>
