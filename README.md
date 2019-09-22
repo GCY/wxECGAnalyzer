@@ -27,6 +27,13 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
   - [ ] Automatic labeling
 - [ ] MIT-BIH Database Operate
   - [ ] WFDB
+- [ ] Quantitative
+  - [ ] Sensitivity
+  - [ ] Accuracy
+  - [ ] Confusion Matrix
+- [x] Other Operate  
+  - [x] Record RAW data(60s)
+  - [x] Save four plot(.png)  
 - [x] Fast Furious Transform(FFT) amplitude spectrum
 
 ## Youtube
