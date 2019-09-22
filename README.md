@@ -7,6 +7,8 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 </br>
 
 ## Function
+- [x] Filter
+  - [x] Finite Impulse Response(FIR)
 - [x] QRS-Complex Detect Algorithm
   - [x] Adaptive Threshold Algorithm
   - [x] HC_Chen Algorithm
@@ -25,7 +27,7 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
   - [ ] Automatic labeling
 - [ ] MIT-BIH Database Operate
   - [ ] WFDB
-- [x] FFT amplitude spectrum
+- [x] Fast Furious Transform(FFT) amplitude spectrum
 
 ## Youtube
 </br>
