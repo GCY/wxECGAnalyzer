@@ -45,9 +45,10 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 ### Algorithm test
 [![Audi R8](http://img.youtube.com/vi/GpHpex1oun4/0.jpg)](https://youtu.be/GpHpex1oun4)
 
-### Running
-
+### Motion artifact
+[![Audi R8](http://img.youtube.com/vi/KjEhhs2AV2s/0.jpg)](https://youtu.be/KjEhhs2AV2s)
 ### Disturbance
+[![Audi R8](http://img.youtube.com/vi/AtoNvDiFkyU/0.jpg)](https://youtu.be/AtoNvDiFkyU)
 
 </br>
 
