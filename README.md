@@ -2,7 +2,7 @@
 This tool is for Electrocardiogram(ECG) signal use to machine learning auto labeling and embedded systems QRS-Complex algorithm validation.
 
 </br>
-In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range of the signed point.
+In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range of the signed point from annotation by human exper.
 </br>
 </br>
 
