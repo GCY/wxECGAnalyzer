@@ -6,7 +6,9 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 </br>
 </br>
 
-## Function
+## Use
+
+## Features
 - [x] Filter
   - [x] Finite Impulse Response(FIR)
 - [x] QRS-Complex Detect Algorithm
