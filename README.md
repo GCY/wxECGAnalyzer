@@ -16,7 +16,7 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
   - [x] HC_Chen Algorithm
   - [x] Enhanced So & Chen
   - [x] Pan-Tompkins
-  - [ ] Deep-ECG
+  - [ ] Deep-ECG(1D-CNN)
 - [x] Heart Rate Variability
   - [x] Heart Rate
   - [x] SDNN
@@ -26,7 +26,7 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
   - [x] Segmentation
   - [ ] Automatic segmentation
   - [x] MIT-BIH ECG-Codes
-  - [ ] Automatic labeling
+  - [ ] Automatic labeling(SVM+CNN Feature)
 - [ ] MIT-BIH Database Operate
   - [ ] WFDB
 - [ ] Quantitative
