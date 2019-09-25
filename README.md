@@ -56,6 +56,7 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 
 ## Reference
 - Find the local maxima and minima : http://billauer.co.il/peakdet.html
+- Heart rate variability : https://en.wikipedia.org/wiki/Heart_rate_variability
 - HC_Chen Algorithm
   - HC Chen, SW Chen, "A Moving Average based Filtering System with its Application to Real-time QRS Detection", Computers in Cardiology, 2003.
   - https://github.com/blakeMilner/real_time_QRS_detection
