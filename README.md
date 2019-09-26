@@ -40,6 +40,9 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 - [x] Connect serial port
 
 ## Experiment device
+-ARM
+  - STM32F407-Discovery
+  - AD8232
 
 ## Video
 </br>
