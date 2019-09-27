@@ -43,6 +43,7 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 -ARM Cortex-M4
   - STM32F407-Discovery
   - AD8232
+-[cNIBP](https://github.com/GCY/Continuous-Non-Invasive-Blood-Pressure-Research-Platform---ECG-and-PPG-Pulse-Arrival-Time-Based-.git) use the ECG part.(without Right Leg Drive)
 
 ## Video
 </br>
