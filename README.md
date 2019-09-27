@@ -64,7 +64,7 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 - Heart rate variability : https://en.wikipedia.org/wiki/Heart_rate_variability
 - HC_Chen Algorithm
   - HC Chen, SW Chen, "A Moving Average based Filtering System with its Application to Real-time QRS Detection", Computers in Cardiology, 2003.
-  - https://github.com/blakeMilner/real_time_QRS_detection (*modify)
+  - https://github.com/blakeMilner/real_time_QRS_detection (modify)
 - Enhanced So & Chen Algorithm
   - So, H. H., & Chan, K. L. (1997, October). Development of QRS detection method for real-time ambulatory cardiac monitor. In Proceedings of the 19th Annual International Conference of the IEEE Engineering in Medicine and Biology Society.'Magnificent Milestones and Emerging Opportunities in Medical Engineering'(Cat. No. 97CH36136) (Vol. 1, pp. 289-292). IEEE.
   - Lee, R. G., Chou, I. C., Lai, C. C., Liu, M. H., & Chiu, M. J. (2005). A novel QRS detection algorithm applied to the analysis for heart rate variability of patients with sleep apnea. Biomedical Engineering: Applications, Basis and Communications, 17(05), 258-262.
@@ -72,7 +72,7 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 - Pan-Tompkins Algorithm
   - Pan, J., & Tompkins, W. J. (1985). A real-time QRS detection algorithm. IEEE transactions on biomedical engineering, (3), 230-236.
   - Afonso, V. X. (1993). Ecg qrs detection. Biomedical digital signal processing, 237-264.
-  - https://github.com/rafaelmmoreira/PanTompkinsQRS (*modify)
+  - https://github.com/rafaelmmoreira/PanTompkinsQRS (modify)
 
 LICENSE
 -------
