@@ -16,27 +16,27 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
   - g++
 ### Build
 - Win10
-  - 1. Open wxECGAnalyzer.sln
-  - 2. Rebuild
+  - 1.Open wxECGAnalyzer.sln
+  - 2.Rebuild
 ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/win10.PNG?raw=true)  
 - Mac High Sierra
-  - 1. Make
+  - 1.Make
 ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/high%20sierra.png?raw=true) 
 ### Operate Manual
   - Clinical trial
-    - 1. Setup your ECG device to  clinical trial.
-    - 2. Connect VCP to wxECGAnalyzer.
-    - 3. Monitor target.
-    - 4. Capture and save target morphology of the ECG.
-    - 5. Select ECG-Codes to labeling.
+    - 1.Setup your ECG device to  clinical trial.
+    - 2.Connect VCP to wxECGAnalyzer.
+    - 3.Monitor target.
+    - 4.Capture and save target morphology of the ECG.
+    - 5.Select ECG-Codes to labeling.
     
 [Snapshot.csv](https://github.com/GCY/wxECGAnalyzer/blob/master/res/snapshot.csv): example file.
     ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/snapshot.png?raw=true) 
   - Validation of Algorithm for Real-time Embedded Systems(Holter)
-    - 1. Add *.cpp and .h file, and create new wxRadioBox item to apply.
-    - 2. Design algorithm with C/C++.
-    - 3. Clinical trial and validation.
-    - 4. Port code file to your embedded project.
+    - 1.Add *.cpp and .h file, and create new wxRadioBox item to apply.
+    - 2.Design algorithm with C/C++.
+    - 3.Clinical trial and validation.
+    - 4.Port code file to your embedded project.
 
 ## Features
 - [x] Filter
