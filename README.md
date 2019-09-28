@@ -37,7 +37,7 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
     - 2.Design algorithm with C/C++.
     - 3.Clinical trial and validation.
     - 4.Port code file to your embedded project.
-
+    ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/single%20mode.gif?raw=true) 
 ## Features
 - [x] Filter
   - [x] Finite Impulse Response(FIR)
