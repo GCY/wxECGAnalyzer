@@ -1,8 +1,8 @@
 # wxECGAnalyzer
-This tool is for Electrocardiogram(ECG) signal use to machine learning auto labeling and embedded systems QRS-Complex algorithm validation.
-
+Detection of abnormal rhythm morphologies is more difficult than normal beat, therefore, we need to collect abnormal rhythm signals in clinical practice.</br>
+This project is for Electrocardiogram(ECG) signal algorithms design and validation, include preprocessing, QRS-Complex detect, ECG segmentation, label your machine learning dataset, and clinical trial...etc.</br>
 </br>
-In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range of the signed point from annotation by human exper.
+For algorithm performance, in ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range of the signed point from annotation by human exper.
 </br>
 </br>
 
