@@ -1,6 +1,6 @@
 # wxECGAnalyzer
 Detection of abnormal rhythm morphologies is more difficult than normal beat, therefore, we need to collect abnormal rhythm signals in clinical practice.</br>
-This project is for Electrocardiogram(ECG) signal algorithms design and validation, include preprocessing, QRS-Complex detection, ECG segmentation, label your machine learning dataset, and clinical trial...etc.</br>
+This project is for Electrocardiogram(ECG) signal algorithms design and validation, include preprocessing, QRS-Complex detection, embedded system validation, ECG segmentation, label your machine learning dataset, and clinical trial...etc.</br>
 </br>
 For algorithm performance, in ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range of the signed point from annotation by human exper.
 </br>
