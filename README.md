@@ -72,11 +72,16 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 
 ## The point of QRS-Complex Detect Algorithm
 ### Finite Impulse Response
+3.045892169ns
 ### Adative Threshold Algorithm
 Gradient = RMS * CV(%) * Threshold_Factor
+8.100692259ns
 ### HC Chen
+2.060941828ns
 ### So & Chen
+2.074ns
 ### Pan-Tompkins
+548.0295567ns
 ### Real-Time Complexity 
 ### Heart Rate Variability
 
