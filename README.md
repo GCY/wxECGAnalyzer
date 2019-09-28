@@ -75,8 +75,11 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 This project with FIR to filter ECG signal, coefficients generate parameter is 360hz, 32taps, band-pass 0.51Hz~8.9Hz and kaiser window.</br>
 Coefficients Generator : https://github.com/GCY/Finite-Impulse-Response-FIR-Filter-
 ### Adaptive Threshold Algorithm
-Gradient = RMS * CV(%) * Threshold_Factor
-
+This algorithm purpose for this project, involving two parts, first is adaptive threshold update, and second find the local maxima and minima. </br>
+Define threshold update period： (Sampling Rate / Target Low-Frequency), for example, target is ECG HR, normal people Heart Rate is 45~150 BPM, that is equally 0.75Hz~2.5Hz, 360SR/0.75Hz = 480 signal point, decrease update period the algorithm be sensitive.</br>
+Determinate the local maxima and minima we need to know gradient, calculate below equation to find the gradient, Threshold_Factor for 12Bit ADC is 3.0f, increase Threshold_Factor, the local maximum and minimum are determinated by the algorithm which need more gradient</br>
+Gradient = RMS * CV(%) * Threshold_Factor</br>
+Design more rules for the local maximum and minimum, your project will be able to recognize ECG PQRST.</br>
 ### HC Chen
 
 ### So & Chen
