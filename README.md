@@ -78,6 +78,7 @@ Gradient = RMS * CV(%) * Threshold_Factor
 ### So & Chen
 ### Pan-Tompkins
 ### Real-Time Complexity 
+### Heart Rate Variability
 
 ## Experiment device
 
