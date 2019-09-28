@@ -10,7 +10,7 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 ### Dependence
 - Win10
   - wxWidgets 3.1.2
-  - VS2017 - MSVD 10.0.17763-SDK
+  - VS2017 - MSVC 10.0.17763-SDK
 - Mac High Sierra
   - wxWidgets 3.x
   - g++
@@ -25,7 +25,7 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 ### Operate Manual
   - Clinical trial
     - 1.Setup your ECG device to  clinical trial.
-    - 2.Connect VCP to wxECGAnalyzer.
+    - 2.Connect VCP to wxECGAnalyzer. (Tools -> VCP, select cu or COM devices,bouadrate is UART only)
     - 3.Monitor target.
     - 4.Segmentation and save target morphology of the ECG.(you can modify the windows-size, tihs project is 700ms)
     - 5.Select [ECG-Codes](https://github.com/GCY/wxECGAnalyzer/blob/master/src/MAC/define.h) to labeling.
@@ -72,19 +72,43 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 
 ## The point of QRS-Complex Detect Algorithm
 ### Finite Impulse Response
+3.045892169ns
 ### Adative Threshold Algorithm
 Gradient = RMS * CV(%) * Threshold_Factor
+8.100692259ns
 ### HC Chen
+2.060941828ns
 ### So & Chen
+2.074ns
 ### Pan-Tompkins
+548.0295567ns
 ### Real-Time Complexity 
+### Heart Rate Variability
 
 ## Experiment device
+
+### Devices
 - ARM Cortex-M4
   - STM32F407-Discovery
   - AD8232
   
 - [cNIBP](https://github.com/GCY/Continuous-Non-Invasive-Blood-Pressure-Research-Platform---ECG-and-PPG-Pulse-Arrival-Time-Based-.git): Use the ECG part.(without Right Leg Drive)
+
+### Setup
+Connect ECG signal output to STM32F4 PC0 pin, next load [*.elf](https://github.com/GCY/wxECGAnalyzer/tree/master/embedded) and run.
+The setup ADC sampling rate is 360Hz with ADC + DMA + Timer-Trigger same as MIT-BIT arrhythmia database record.
+</br></br>
+For VCP mode just define</br>
+#define VCP_MODE</br></br>
+For Holter</br>
+#define SINGLE_MODE</br>
+And define QRS-Complex detect algorithm flag</br>
+//#define ATA</br>
+//#define HC</br>
+//#define SO</br>
+//#define PT</br>
+
+
 
 ## Video
 </br>
