@@ -85,7 +85,7 @@ This project modified LPF and HPF window size, hp_buffer = 150ms(QRS-Complex siz
 ### Enhanced So & Chen
 The threshold_parameter and filter_parameter are 4 and 16 in the implementation , enhanced point is 123(350ms for 360Hz sampling rate), if last QRS-Complex point is over triple sampling rate, we will decrease threshold until zero, slope square process could detect abnormal heart rhythms.</br>
 ### Pan-Tompkins
-The Pan-Tompkins filter of classical version is design for 200Hz and band-pass 5Hz-15Hz, if ECG signal is over 200Hz it needs to downsample to 200Hz, this project with FIR to clean 360Hz ECG signal, and modified Search Back period must be more than sampling_rate * 1.66(550 point) .</br>
+The Pan-Tompkins filter of classical version is design for 200Hz and band-pass 5Hz-15Hz, if ECG signal is over 200Hz it needs to downsample to 200Hz, this project with FIR to clean 360Hz ECG signal, and modified Search Back period must be more than sampling_rate * 1.66(600 point, but this project is 550 point) .</br>
 ### Real-Time Complexity 
 Running on STM32F407 clock 168MHz and enable FPU, y-axix time uint is nanoseconds, x-axix is signal point.</br>
 Charts below show runtime environment time complexity, Adative Threshold Algorithm complexity is follow gradient threshold(step edge), the QRS-complex detection of the classical Pan-Tompkins algorithm mainly complexity is Search Back, HC Chen and So&Chen relatively stable.</br>
