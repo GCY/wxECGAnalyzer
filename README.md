@@ -20,6 +20,19 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
   - 2. Rebuild
 - Mac High Sierra
   - 1. Make
+  
+### Operate Manual
+  - Clinical trial
+    - 1. Setup your ECG device to  clinical trial.
+    - 2. Connect VCP to wxECGAnalyzer.
+    - 3. Monitor target.
+    - 4. Capture and save target morphology of the ECG.
+    - 5. Select ECG-Codes to labeling.
+  - Validation of Algorithm for Real-time Embedded Systems(Holter)
+    - 1. Add *.cpp and .h file, and create new wxRadioBox item to apply.
+    - 2. Design algorithm with C/C++.
+    - 3. Clinical trial and validation.
+    - 4. Port code file to your embedded project.
 
 ## Features
 - [x] Filter
@@ -58,11 +71,11 @@ Gradient = RMS * CV(%) * Threshold_Factor
 
 
 ## Experiment device
--ARM Cortex-M4
+- ARM Cortex-M4
   - STM32F407-Discovery
   - AD8232
   
--[cNIBP](https://github.com/GCY/Continuous-Non-Invasive-Blood-Pressure-Research-Platform---ECG-and-PPG-Pulse-Arrival-Time-Based-.git): Use the ECG part.(without Right Leg Drive)
+- [cNIBP](https://github.com/GCY/Continuous-Non-Invasive-Blood-Pressure-Research-Platform---ECG-and-PPG-Pulse-Arrival-Time-Based-.git): Use the ECG part.(without Right Leg Drive)
 
 ## Video
 </br>
