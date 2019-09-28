@@ -6,7 +6,11 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 </br>
 </br>
 
-## Use
+## Build
+### Dependence
+#### Win10
+##### wxWidgets 3.1.2
+##### VS2017 - MSVD 10.0.17763-SDK
 
 ## Features
 - [x] Filter
