@@ -10,7 +10,7 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 ### Dependence
 - Win10
   - wxWidgets 3.1.2
-  - VS2017 - MSVD 10.0.17763-SDK
+  - VS2017 - MSVC 10.0.17763-SDK
 - Mac High Sierra
   - wxWidgets 3.x
   - g++
@@ -25,7 +25,7 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 ### Operate Manual
   - Clinical trial
     - 1.Setup your ECG device to  clinical trial.
-    - 2.Connect VCP to wxECGAnalyzer.
+    - 2.Connect VCP to wxECGAnalyzer. (Tools -> VCP, select cu or COM devices,bouadrate is UART only)
     - 3.Monitor target.
     - 4.Segmentation and save target morphology of the ECG.(you can modify the windows-size, tihs project is 700ms)
     - 5.Select [ECG-Codes](https://github.com/GCY/wxECGAnalyzer/blob/master/src/MAC/define.h) to labeling.
@@ -80,11 +80,18 @@ Gradient = RMS * CV(%) * Threshold_Factor
 ### Real-Time Complexity 
 
 ## Experiment device
+
+### Devices
 - ARM Cortex-M4
   - STM32F407-Discovery
   - AD8232
   
 - [cNIBP](https://github.com/GCY/Continuous-Non-Invasive-Blood-Pressure-Research-Platform---ECG-and-PPG-Pulse-Arrival-Time-Based-.git): Use the ECG part.(without Right Leg Drive)
+
+### Setup
+Connect ECG signal to STM32F4 PC0 pin, next load [*.elf](https://github.com/GCY/wxECGAnalyzer/tree/master/embedded) and run.
+The setup ADC sampling rate is 360Hz with ADC + DMA + Timer-Trigger same as MIT-BIT arrhythmia database record.
+
 
 ## Video
 </br>
