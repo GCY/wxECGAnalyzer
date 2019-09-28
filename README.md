@@ -77,11 +77,11 @@ Coefficients Generator : https://github.com/GCY/Finite-Impulse-Response-FIR-Filt
 ### Adaptive Threshold Algorithm
 This algorithm purpose for this project, involving two parts, first is adaptive threshold update, and second find the local maxima and minima. </br>
 Define threshold update period： (Sampling Rate / Target Low-Frequency), for example, target is ECG HR, normal people Heart Rate is 45-150 BPM, that is equally 0.75Hz-2.5Hz, 360SR/0.75Hz = 480 signal point, decrease update period the algorithm be sensitive.</br>
-Determinate the local maxima and minima we need to know gradient, calculate below equation to find the gradient, Threshold_Factor for 12Bit ADC is 3.0f, increase Threshold_Factor, the local maximum and minimum are determinated by the algorithm which need more gradient</br>
+Determinate the local maxima and minima we need to know gradient, calculate below equation to find the gradient, Threshold_Factor for 12Bit ADC is 3.0f, increase Threshold_Factor, the local maximum and minimum are determinated by the algorithm which need more gradient.</br>
 Gradient = RMS * CV(%) * Threshold_Factor</br>
 Design more rules for the local maximum and minimum, your project will be able to recognize ECG PQRST.</br>
 ### HC Chen
-
+This project modified LPF and HPF window size, hp_buffer = 150ms(QRS-Complex size), forgetting factor alpha use to avoid threshold keeping high-level.</br>
 ### So & Chen
 
 ### Pan-Tompkins
