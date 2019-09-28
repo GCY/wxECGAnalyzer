@@ -83,7 +83,8 @@ Gradient = RMS * CV(%) * Threshold_Factor
 ### Pan-Tompkins
 
 ### Real-Time Complexity 
-Running on STM32F407 clock 168MHz and enable FPU, y-axix time uint is nanoseconds, x-axix is signal point, charts below show runtime environment time complexity, Adative Threshold Algorithm complexity is follow gradient threshold(step edge), the QRS-complex detection of the classical Pan-Tompkins algorithm mainly complexity is search back, HC Chen and So&Chen is stable.</br>
+Running on STM32F407 clock 168MHz and enable FPU, y-axix time uint is nanoseconds, x-axix is signal point.</br>
+Charts below show runtime environment time complexity, Adative Threshold Algorithm complexity is follow gradient threshold(step edge), the QRS-complex detection of the classical Pan-Tompkins algorithm mainly complexity is search back, HC Chen and So&Chen is stable.</br>
 #### Adaptive Threshold Algorithm (Average : 8.100692259ns)
 ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/ata%20time.png?raw=true)  
 #### HC Chen (Average : 2.060941828ns)
