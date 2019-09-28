@@ -29,6 +29,8 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
     - 3. Monitor target.
     - 4. Capture and save target morphology of the ECG.
     - 5. Select ECG-Codes to labeling.
+    [Snapshot.csv](https://github.com/GCY/wxECGAnalyzer/blob/master/res/snapshot.csv): example file.
+    ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/snapshot.png?raw=true) 
   - Validation of Algorithm for Real-time Embedded Systems(Holter)
     - 1. Add *.cpp and .h file, and create new wxRadioBox item to apply.
     - 2. Design algorithm with C/C++.
