@@ -83,12 +83,12 @@ Design more rules for the local maximum and minimum, your project will be able t
 ### HC Chen
 This project modified LPF and HPF window size, hp_buffer = 150ms(QRS-Complex size), forgetting factor alpha is used to avoid threshold keeping high-level.</br>
 ### Enhanced So & Chen
-The threshold_parameter and filter_parameter are 4 and 16 in the implementation , enhanced point is 250(700ms for 360Hz sampling rate), if last QRS-Complex point is over triple sampling rate, we will decrease threshold until zero.</br>
+The threshold_parameter and filter_parameter are 4 and 16 in the implementation , enhanced point is 123(350ms for 360Hz sampling rate), if last QRS-Complex point is over triple sampling rate, we will decrease threshold until zero, slope square process could detect abnormal heart rhythms.</br>
 ### Pan-Tompkins
-The Pan-Tompkins filter of classical version is design for 200Hz and band-pass 5Hz-15Hz
+The Pan-Tompkins filter of classical version is design for 200Hz and band-pass 5Hz-15Hz, if ECG signal is over 200Hz it needs to downsample to 200Hz, this project with FIR to clean 360Hz ECG signal, and modified Search Back period must be more than sampling_rate * 1.66(550 point) .</br>
 ### Real-Time Complexity 
 Running on STM32F407 clock 168MHz and enable FPU, y-axix time uint is nanoseconds, x-axix is signal point.</br>
-Charts below show runtime environment time complexity, Adative Threshold Algorithm complexity is follow gradient threshold(step edge), the QRS-complex detection of the classical Pan-Tompkins algorithm mainly complexity is search back, HC Chen and So&Chen relatively stable.</br>
+Charts below show runtime environment time complexity, Adative Threshold Algorithm complexity is follow gradient threshold(step edge), the QRS-complex detection of the classical Pan-Tompkins algorithm mainly complexity is Search Back, HC Chen and So&Chen relatively stable.</br>
 #### Adaptive Threshold Algorithm (Average : 8.100692259ns)
 ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/ata%20time.png?raw=true)  
 #### HC Chen (Average : 2.060941828ns)
@@ -142,7 +142,7 @@ And define QRS-Complex detect algorithm flag</br>
 - Heart rate variability : https://en.wikipedia.org/wiki/Heart_rate_variability
 - HC_Chen Algorithm
   - HC Chen, SW Chen, "A Moving Average based Filtering System with its Application to Real-time QRS Detection", Computers in Cardiology, 2003.
-  - https://github.com/blakeMilner/real_time_QRS_detection (modify)
+  - https://github.com/blakeMilner/real_time_QRS_detection (modified)
 - Enhanced So & Chen Algorithm
   - So, H. H., & Chan, K. L. (1997, October). Development of QRS detection method for real-time ambulatory cardiac monitor. In Proceedings of the 19th Annual International Conference of the IEEE Engineering in Medicine and Biology Society.'Magnificent Milestones and Emerging Opportunities in Medical Engineering'(Cat. No. 97CH36136) (Vol. 1, pp. 289-292). IEEE.
   - Lee, R. G., Chou, I. C., Lai, C. C., Liu, M. H., & Chiu, M. J. (2005). A novel QRS detection algorithm applied to the analysis for heart rate variability of patients with sleep apnea. Biomedical Engineering: Applications, Basis and Communications, 17(05), 258-262.
@@ -150,7 +150,7 @@ And define QRS-Complex detect algorithm flag</br>
 - Pan-Tompkins Algorithm
   - Pan, J., & Tompkins, W. J. (1985). A real-time QRS detection algorithm. IEEE transactions on biomedical engineering, (3), 230-236.
   - Afonso, V. X. (1993). Ecg qrs detection. Biomedical digital signal processing, 237-264.
-  - https://github.com/rafaelmmoreira/PanTompkinsQRS (modify)
+  - https://github.com/rafaelmmoreira/PanTompkinsQRS (modified)
 
 LICENSE
 -------
