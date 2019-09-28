@@ -27,7 +27,7 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
     - 1.Setup your ECG device to  clinical trial.
     - 2.Connect VCP to wxECGAnalyzer.
     - 3.Monitor target.
-    - 4.Capture and save target morphology of the ECG.
+    - 4.Segmentation and save target morphology of the ECG.(you can modify the windows-size, tihs project is 700ms)
     - 5.Select [ECG-Codes](https://github.com/GCY/wxECGAnalyzer/blob/master/src/MAC/define.h) to labeling.
     
 [Snapshot.csv](https://github.com/GCY/wxECGAnalyzer/blob/master/res/snapshot.csv): example file.
