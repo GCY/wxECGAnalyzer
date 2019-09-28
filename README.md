@@ -83,7 +83,7 @@ Gradient = RMS * CV(%) * Threshold_Factor
 ### Pan-Tompkins
 548.0295567ns
 ### Real-Time Complexity 
-Running on STM32F407 clock is 168MHz, y-axix time uint is nanoseconds, x-axix is signal point</br>
+Running on STM32F407 clock 168MHz and enable FPU, y-axix time uint is nanoseconds, x-axix is signal point</br>
 #### Adative Threshold Algorithm (Average : 8.100692259ns)
 ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/ata%20time.png?raw=true)  
 #### HC Chen (Average : 2.060941828ns)
