@@ -81,9 +81,9 @@ Determinate the local maxima and minima we need to know gradient, calculate belo
 Gradient = RMS * CV(%) * Threshold_Factor</br>
 Design more rules for the local maximum and minimum, your project will be able to recognize ECG PQRST.</br>
 ### HC Chen
-This project modified LPF and HPF window size, hp_buffer = 150ms(QRS-Complex size), forgetting factor alpha use to avoid threshold keeping high-level.</br>
-### So & Chen
-
+This project modified LPF and HPF window size, hp_buffer = 150ms(QRS-Complex size), forgetting factor alpha is used to avoid threshold keeping high-level.</br>
+### Enhanced So & Chen
+This implement threshold_parameter and filter_parameter is 4 and 16, enhanced point is 250(700ms for 360Hz sampling rate), if last QRS-Complex point is over triple sampling rate, we will decrease threshold until zero.</br>
 ### Pan-Tompkins
 
 ### Real-Time Complexity 
@@ -93,7 +93,7 @@ Charts below show runtime environment time complexity, Adative Threshold Algorit
 ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/ata%20time.png?raw=true)  
 #### HC Chen (Average : 2.060941828ns)
 ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/hc%20chen%20time.png?raw=true)  
-#### So & Chen (Average : 2.074ns)
+#### Enhanced So & Chen (Average : 2.074ns)
 ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/so%20and%20chen%20time.png?raw=true)  
 #### Pan-Tompkins (Average : 548.0295567ns)
 ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/pt%20time.png?raw=true)  
