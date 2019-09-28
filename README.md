@@ -6,7 +6,7 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 </br>
 </br>
 
-## Build
+## Use
 ### Dependence
 - Win10
   - wxWidgets 3.1.2
@@ -14,6 +14,12 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 - Mac High Sierra
   - wxWidgets 3.x
   - g++
+### Build
+- Win10
+  - 1. Open wxECGAnalyzer.sln
+  - 2. Rebuild
+- Mac High Sierra
+  - 1. Make
 
 ## Features
 - [x] Filter
@@ -45,6 +51,11 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
   - [x] Save four plot(.png)  
 - [x] Fast Furious Transform(FFT) amplitude spectrum
 - [x] Connect serial port
+
+## The point of QRS-Complex Detect Algorithm
+### Adative Threshold Algorithm
+Gradient = RMS * CV(%) * Threshold_Factor
+
 
 ## Experiment device
 -ARM Cortex-M4
