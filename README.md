@@ -73,18 +73,18 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 ## The point of QRS-Complex Detect Algorithm
 ### Finite Impulse Response
 3.045892169ns
-### Adative Threshold Algorithm
+### Adaptive Threshold Algorithm
 Gradient = RMS * CV(%) * Threshold_Factor
-8.100692259ns
+
 ### HC Chen
-2.060941828ns
+
 ### So & Chen
-2.074ns
+
 ### Pan-Tompkins
-548.0295567ns
+
 ### Real-Time Complexity 
-Running on STM32F407 clock 168MHz and enable FPU, y-axix time uint is nanoseconds, x-axix is signal point</br>
-#### Adative Threshold Algorithm (Average : 8.100692259ns)
+Running on STM32F407 clock 168MHz and enable FPU, y-axix time uint is nanoseconds, x-axix is signal point, charts below show runtime environment time complexity, Adative Threshold Algorithm complexity is follow gradient threshold(step edge), the QRS-complex detection of the classical Pan-Tompkins algorithm mainly complexity is search back, HC Chen and So&Chen is stable.</br>
+#### Adaptive Threshold Algorithm (Average : 8.100692259ns)
 ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/ata%20time.png?raw=true)  
 #### HC Chen (Average : 2.060941828ns)
 ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/hc%20chen%20time.png?raw=true)  
