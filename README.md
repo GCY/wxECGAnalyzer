@@ -7,7 +7,38 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 </br>
 
 ## Use
-
+### Dependence
+- Win10
+  - wxWidgets 3.1.2
+  - VS2017 - MSVD 10.0.17763-SDK
+- Mac High Sierra
+  - wxWidgets 3.x
+  - g++
+### Build
+- Win10
+  - 1.Open wxECGAnalyzer.sln
+  - 2.Rebuild
+![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/win10.PNG?raw=true)  
+- Mac High Sierra
+  - 1.Make
+![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/high%20sierra.png?raw=true) 
+### Operate Manual
+  - Clinical trial
+    - 1.Setup your ECG device to  clinical trial.
+    - 2.Connect VCP to wxECGAnalyzer.
+    - 3.Monitor target.
+    - 4.Segmentation and save target morphology of the ECG.(you can modify the windows-size, tihs project is 700ms)
+    - 5.Select [ECG-Codes](https://github.com/GCY/wxECGAnalyzer/blob/master/src/MAC/define.h) to labeling.
+    
+[Snapshot.csv](https://github.com/GCY/wxECGAnalyzer/blob/master/res/snapshot.csv): example file.
+    ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/snapshot.png?raw=true) 
+  - Validation of Algorithm for Real-time Embedded Systems(Holter)
+    - 1.Add *.cpp and .h file, and create new wxRadioBox item to apply.
+    - 2.Design algorithm with C/C++.
+    - 3.Clinical trial and validation.
+    - 4.Port code file to your embedded project.
+    
+    ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/single%20mode.gif?raw=true) 
 ## Features
 - [x] Filter
   - [x] Finite Impulse Response(FIR)
@@ -39,12 +70,21 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 - [x] Fast Furious Transform(FFT) amplitude spectrum
 - [x] Connect serial port
 
+## The point of QRS-Complex Detect Algorithm
+### Finite Impulse Response
+### Adative Threshold Algorithm
+Gradient = RMS * CV(%) * Threshold_Factor
+### HC Chen
+### So & Chen
+### Pan-Tompkins
+### Real-Time Complexity 
+
 ## Experiment device
--ARM Cortex-M4
+- ARM Cortex-M4
   - STM32F407-Discovery
   - AD8232
   
--[cNIBP](https://github.com/GCY/Continuous-Non-Invasive-Blood-Pressure-Research-Platform---ECG-and-PPG-Pulse-Arrival-Time-Based-.git): Use the ECG part.(without Right Leg Drive)
+- [cNIBP](https://github.com/GCY/Continuous-Non-Invasive-Blood-Pressure-Research-Platform---ECG-and-PPG-Pulse-Arrival-Time-Based-.git): Use the ECG part.(without Right Leg Drive)
 
 ## Video
 </br>
