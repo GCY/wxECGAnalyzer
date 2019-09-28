@@ -83,9 +83,9 @@ Design more rules for the local maximum and minimum, your project will be able t
 ### HC Chen
 This project modified LPF and HPF window size, hp_buffer = 150ms(QRS-Complex size), forgetting factor alpha is used to avoid threshold keeping high-level.</br>
 ### Enhanced So & Chen
-This implement threshold_parameter and filter_parameter is 4 and 16, enhanced point is 250(700ms for 360Hz sampling rate), if last QRS-Complex point is over triple sampling rate, we will decrease threshold until zero.</br>
+The threshold_parameter and filter_parameter are 4 and 16 in the implementation , enhanced point is 250(700ms for 360Hz sampling rate), if last QRS-Complex point is over triple sampling rate, we will decrease threshold until zero.</br>
 ### Pan-Tompkins
-
+The Pan-Tompkins filter of classical version is design for 200Hz and band-pass 5Hz-15Hz
 ### Real-Time Complexity 
 Running on STM32F407 clock 168MHz and enable FPU, y-axix time uint is nanoseconds, x-axix is signal point.</br>
 Charts below show runtime environment time complexity, Adative Threshold Algorithm complexity is follow gradient threshold(step edge), the QRS-complex detection of the classical Pan-Tompkins algorithm mainly complexity is search back, HC Chen and So&Chen relatively stable.</br>
@@ -98,7 +98,7 @@ Charts below show runtime environment time complexity, Adative Threshold Algorit
 #### Pan-Tompkins (Average : 548.0295567ns)
 ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/pt%20time.png?raw=true)  
 ### Heart Rate Variability
-
+Heart Rate and HRV are move-average in the implementation, N = BEAT_SIZE = 16.</br>
 ## Experiment device
 
 ### Devices
