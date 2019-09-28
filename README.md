@@ -18,9 +18,10 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 - Win10
   - 1. Open wxECGAnalyzer.sln
   - 2. Rebuild
+![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/win10.PNG?raw=true)  
 - Mac High Sierra
   - 1. Make
-  
+![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/high%20sierra.png?raw=true) 
 ### Operate Manual
   - Clinical trial
     - 1. Setup your ECG device to  clinical trial.
