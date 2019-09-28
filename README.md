@@ -84,9 +84,13 @@ Gradient = RMS * CV(%) * Threshold_Factor
 548.0295567ns
 ### Real-Time Complexity 
 Running on STM32F407 clock is 168MHz, y-axix time uint is nanoseconds, x-axix is signal point</br>
+#### Adative Threshold Algorithm (Average : 8.100692259ns)
 ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/ata%20time.png?raw=true)  
+#### HC Chen (Average : 2.060941828ns)
 ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/hc%20chen%20time.png?raw=true)  
+#### So & Chen (Average : 2.074ns)
 ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/so%20and%20chen%20time.png?raw=true)  
+#### Pan-Tompkins (Average : 548.0295567ns)
 ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/pt%20time.png?raw=true)  
 ### Heart Rate Variability
 
