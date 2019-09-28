@@ -72,7 +72,8 @@ In ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range 
 
 ## The point of QRS-Complex Detect Algorithm
 ### Finite Impulse Response
-3.045892169ns
+This project with FIR to filter ECG signal, coefficients generate parameter is 360hz, 32taps, band-pass 0.51Hz~8.9Hz and kaiser window.</br>
+https://github.com/GCY/Finite-Impulse-Response-FIR-Filter-
 ### Adaptive Threshold Algorithm
 Gradient = RMS * CV(%) * Threshold_Factor
 
