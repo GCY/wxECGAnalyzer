@@ -92,6 +92,17 @@ Gradient = RMS * CV(%) * Threshold_Factor
 ### Setup
 Connect ECG signal output to STM32F4 PC0 pin, next load [*.elf](https://github.com/GCY/wxECGAnalyzer/tree/master/embedded) and run.
 The setup ADC sampling rate is 360Hz with ADC + DMA + Timer-Trigger same as MIT-BIT arrhythmia database record.
+</br>
+For VCP mode just define</br>
+#define VCP_MODE</br>
+For Holter</br>
+#define SINGLE_MODE</br>
+And define QRS-Complex detect algorithm flag</br>
+//#define ATA</br>
+//#define HC</br>
+//#define SO</br>
+//#define PT</br>
+
 
 
 ## Video
