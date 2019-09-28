@@ -1,5 +1,5 @@
 # wxECGAnalyzer
-Detection of abnormal rhythm morphologies is more difficult than normal beat, therefore, we need to collect abnormal rhythm signals in clinical practice.</br>
+Detection of abnormal rhythm morphologies is more difficult than normal beat, therefore, we need to collect abnormal rhythm signals in clinical practice for improve QRS-Complex detection algorithm.</br>
 This project is for Electrocardiogram(ECG) signal algorithms design and validation, include preprocessing, QRS-Complex detection, embedded system validation, ECG segmentation, label your machine learning dataset, and clinical trial...etc.</br>
 </br>
 For algorithm performance, in ANSI/AAMI EC38,it is required that the detected QRS shall in the 150ms range of the signed point from annotation by human exper.
@@ -70,7 +70,7 @@ For algorithm performance, in ANSI/AAMI EC38,it is required that the detected QR
 - [x] Fast Furious Transform(FFT) amplitude spectrum
 - [x] Connect serial port
 
-## The point of QRS-Complex Detect Algorithm
+## The point of QRS-Complex Detection Algorithm
 ### Finite Impulse Response
 This project with FIR to filter ECG signal, coefficients generate parameter is 360hz, 32taps, band-pass 0.51Hz~8.9Hz and kaiser window.</br>
 Coefficients Generator : https://github.com/GCY/Finite-Impulse-Response-FIR-Filter-
