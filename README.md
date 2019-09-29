@@ -62,6 +62,7 @@ For algorithm performance, in ANSI/AAMI EC38,it is required that the detected QR
   - [ ] WFDB
 - [ ] Quantitative
   - [ ] Sensitivity
+  - [ ] Specificity
   - [ ] Accuracy
   - [ ] Confusion Matrix
 - [x] Other Operate  
