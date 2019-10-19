@@ -30,8 +30,6 @@
 #include "usb_bsp.h"
 #include "usbd_conf.h"
 
-#include "defines.h"
-
 #ifndef USB_VCP_NVIC_PRIORITY
 #define USB_VCP_NVIC_PRIORITY			0x01
 #endif
