@@ -118,18 +118,18 @@ Connect ECG signal output to STM32F4 PC0 pin, next load [*.elf](https://github.c
 The setup ADC sampling rate is 360Hz with ADC + DMA + Timer-Trigger same as MIT-BIT arrhythmia database record.
 </br></br>
 For VCP mode just define</br>
-<code>
+
 #define VCP_MODE</br></br>
-</code></br>
+
 For Holter</br>
 #define SINGLE_MODE</br>
 And define QRS-Complex detect algorithm flag</br>
-<code> 
+
 //#define ATA </br>
 //#define HC </br>
 //#define SO </br>
 //#define PT </br>
-</code></br>
+
 
 
 ## Video
