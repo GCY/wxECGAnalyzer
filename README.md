@@ -23,7 +23,7 @@ For algorithm performance, in ANSI/AAMI EC38,it is required that the detected QR
 - Mac High Sierra
   - 1.Make
 ![alt text](https://github.com/GCY/wxECGAnalyzer/blob/master/res/high%20sierra.png?raw=true) 
-### Operate Manual
+### Operation Manual
   - Clinical trial
     - 1.Setup your ECG device to  clinical trial.
     - 2.Connect VCP to wxECGAnalyzer. (Tools -> VCP, select cu or COM devices,bouadrate is UART only)
