@@ -119,7 +119,7 @@ The setup ADC sampling rate is 360Hz with ADC + DMA + Timer-Trigger same as MIT-
 </br></br>
 For VCP mode just define</br>
 
-#define VCP_MODE</br></br>
+#define VCP_MODE</br>
 
 For Holter</br>
 #define SINGLE_MODE</br>
