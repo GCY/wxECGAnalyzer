@@ -120,16 +120,16 @@ The setup ADC sampling rate is 360Hz with ADC + DMA + Timer-Trigger same as MIT-
 For VCP mode just define</br>
 <code>
 #define VCP_MODE</br></br>
-</code>
+</code></br>
 For Holter</br>
 #define SINGLE_MODE</br>
 And define QRS-Complex detect algorithm flag</br>
-<code>
-//#define ATA</br>
-//#define HC</br>
-//#define SO</br>
-//#define PT</br>
-</code>
+<code> 
+//#define ATA </br>
+//#define HC </br>
+//#define SO </br>
+//#define PT </br>
+</code></br>
 
 
 ## Video
