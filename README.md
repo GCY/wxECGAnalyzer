@@ -7,6 +7,9 @@ For algorithm performance, in ANSI/AAMI EC38,it is required that the detected QR
 </br>
 目前僅用MIT-BIH等標準心律不整資料庫或是生理訊號挑戰賽提供的標註資料，理論上很難得到超越其標注的學習模型，實務上還是需要配合其他臨床實驗搜集更多案例強化模型，下個To-Do會用標準資料庫訓練分類模型增加基本的自動化標註，目前僅針對臨床實時運行的特殊案例配合人工選擇QRS-Complex演算法自動切片。
 </br>
+
+![demo](https://github.com/GCY/wxECGAnalyzer/blob/master/res/demo.gif)  
+
 ## Use
 ### Dependence
 - Win10
