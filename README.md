@@ -127,7 +127,7 @@ For Holter</br>
 ```
 And define QRS-Complex detect algorithm flag</br>
 ```cpp
-//#define ATA 
+#define ATA 
 //#define HC 
 //#define SO 
 //#define PT 
