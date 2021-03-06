@@ -60,7 +60,7 @@ SignalPoint So_Chen_detect(SignalPoint signal,int initial_point,float threshold_
 #ifdef _WIN_
 	 maxi = (( fabsf(max.value - qrs_onset_point.value) - maxi) / filter_parameter) + maxi;
 #else
-	 maxi = ((abs(max.value - qrs_onset_point.value) - maxi) / filter_parameter) + maxi;
+	 maxi = ((fabs(max.value - qrs_onset_point.value) - maxi) / filter_parameter) + maxi;
 #endif
 	 slop_threshold = threshold_parameter / 16.0f * maxi;
 	 last_maxi = maxi;

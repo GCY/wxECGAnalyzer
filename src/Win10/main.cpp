@@ -396,8 +396,8 @@ void Frame::InitPlot()
    original_layer->SetDrawOutsideMargins(false);
 
    wxFont graphFont(11, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL);
-   mpScaleX* xaxis = new mpScaleX(wxT("Time（index）"), mpALIGN_BOTTOM, true, mpX_NORMAL);
-   mpScaleY* yaxis = new mpScaleY(wxT("Amplitude（12bit）"), mpALIGN_LEFT, true);
+   mpScaleX* xaxis = new mpScaleX(wxT("Time(index)"), mpALIGN_BOTTOM, true, mpX_NORMAL);
+   mpScaleY* yaxis = new mpScaleY(wxT("Amplitude(12bit)"), mpALIGN_LEFT, true);
    xaxis->SetFont(graphFont);
    yaxis->SetFont(graphFont);
    xaxis->SetDrawOutsideMargins(false);
@@ -426,8 +426,8 @@ void Frame::InitPlot()
    processing_layer->SetPen(vectorpen1);
    processing_layer->SetDrawOutsideMargins(false);
 
-   xaxis = new mpScaleX(wxT("Time（index）"), mpALIGN_BOTTOM, true, mpX_NORMAL);
-   yaxis = new mpScaleY(wxT("Amplitude（12bit）"), mpALIGN_LEFT, true);
+   xaxis = new mpScaleX(wxT("Time(index)"), mpALIGN_BOTTOM, true, mpX_NORMAL);
+   yaxis = new mpScaleY(wxT("Amplitude(12bit)"), mpALIGN_LEFT, true);
    xaxis->SetFont(graphFont);
    yaxis->SetFont(graphFont);
    xaxis->SetDrawOutsideMargins(false);
@@ -470,7 +470,7 @@ void Frame::InitPlot()
 
    FFT_layer = new mpFXYVector(wxT("FFT"));
 
-   xaxis = new mpScaleX(wxT("Frequency（Hz）"), mpALIGN_BOTTOM, true, mpX_NORMAL);
+   xaxis = new mpScaleX(wxT("Frequency(Hz)"), mpALIGN_BOTTOM, true, mpX_NORMAL);
    yaxis = new mpScaleY(wxT("Amplitude"), mpALIGN_LEFT, true);
    xaxis->SetFont(graphFont);
    yaxis->SetFont(graphFont);
@@ -495,8 +495,8 @@ void Frame::InitPlot()
    FFT_plot->Fit();        
 
    snapshot_qrs_layer = new mpFXYVector(wxT("Snapshot"));
-   xaxis = new mpScaleX(wxT("Time（index）"), mpALIGN_BOTTOM, true, mpX_NORMAL);
-   yaxis = new mpScaleY(wxT("Amplitude（12bit）"), mpALIGN_LEFT, true);
+   xaxis = new mpScaleX(wxT("Time(index)"), mpALIGN_BOTTOM, true, mpX_NORMAL);
+   yaxis = new mpScaleY(wxT("Amplitude(12bit)"), mpALIGN_LEFT, true);
    xaxis->SetFont(graphFont);
    yaxis->SetFont(graphFont);
    xaxis->SetDrawOutsideMargins(false);
@@ -836,7 +836,7 @@ void Frame::CalculateFrequency(std::vector<double> &signal)
    FFT_layer->SetDrawOutsideMargins(false);
 
    wxFont graphFont(11, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL);
-   mpScaleX* xaxis = new mpScaleX(wxT("Frequency（Hz）"), mpALIGN_BOTTOM, true, mpX_NORMAL);
+   mpScaleX* xaxis = new mpScaleX(wxT("Frequency(Hz)"), mpALIGN_BOTTOM, true, mpX_NORMAL);
    mpScaleY* yaxis = new mpScaleY(wxT("Amplitude"), mpALIGN_LEFT, true);
    xaxis->SetFont(graphFont);
    yaxis->SetFont(graphFont);
@@ -926,8 +926,8 @@ void Frame::SnapshotQRSComplex(int index,double value,SignalPoint peak)
 	 snapshot_qrs_layer->SetDrawOutsideMargins(false);
 
 	 wxFont graphFont(11, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL);
-	 mpScaleX* xaxis = new mpScaleX(wxT("Time（index）"), mpALIGN_BOTTOM, true, mpX_NORMAL);
-	 mpScaleY* yaxis = new mpScaleY(wxT("Amplitude（12bit）"), mpALIGN_LEFT, true);
+	 mpScaleX* xaxis = new mpScaleX(wxT("Time(index)"), mpALIGN_BOTTOM, true, mpX_NORMAL);
+	 mpScaleY* yaxis = new mpScaleY(wxT("Amplitude(12bit)"), mpALIGN_LEFT, true);
 	 xaxis->SetFont(graphFont);
 	 yaxis->SetFont(graphFont);
 	 xaxis->SetDrawOutsideMargins(false);
