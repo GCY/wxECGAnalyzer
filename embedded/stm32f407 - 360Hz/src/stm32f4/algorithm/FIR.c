@@ -1,5 +1,7 @@
 #include "FIR.h"
 
+unsigned offset;
+
 float FIR_filter(float input)
 {
    
