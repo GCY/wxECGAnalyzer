@@ -34,12 +34,15 @@
 
 #include "usbd_cdc_core.h"
 
+#include "usbd_usr.h"
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 /* Private function prototypes -----------------------------------------------*/
 extern USB_OTG_CORE_HANDLE           USB_OTG_dev;
+extern enum USB_VCP_Result;
+extern USB_VCP_Result INT_USB_VCP_AddReceived(uint8_t);
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -216,18 +219,6 @@ uint16_t VCP_DataTx (uint8_t* Buf, uint32_t Len) {
   * @param  Len: Number of data received (in bytes)
   * @retval Result of the opeartion: USBD_OK if all operations are OK else VCP_FAIL
   */
-
-typedef enum {
-	USB_VCP_OK,                  /*!< Everything ok */
-	USB_VCP_ERROR,               /*!< An error occurred */
-	USB_VCP_RECEIVE_BUFFER_FULL, /*!< Receive buffer is full */
-	USB_VCP_DATA_OK,             /*!< Data OK */
-	USB_VCP_DATA_EMPTY,          /*!< Data empty */
-	USB_VCP_NOT_CONNECTED,       /*!< Not connected to PC */
-	USB_VCP_CONNECTED,           /*!< Connected to PC */
-	USB_VCP_DEVICE_SUSPENDED,    /*!< Device is suspended */
-	USB_VCP_DEVICE_RESUMED       /*!< Device is resumed */
-}USB_VCP_Result;
 
 uint16_t VCP_DataRx (uint8_t* Buf, uint32_t Len) {
 	uint32_t i;
